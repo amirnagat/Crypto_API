@@ -7,7 +7,7 @@ const API = ` https://api.coingecko.com/api/v3/coins/markets?vs_currency=USD&ord
     
 fetch(API)
 .then(function(response){
-    return response.json();
+    return response.json();  
 })
 .then(function(data){
  displayCoins(data);
