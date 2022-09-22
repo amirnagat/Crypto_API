@@ -1,10 +1,10 @@
-// body
+// body   
 let body = document.body;
-// input 
+// input  
 let input = document.querySelector('#input');
 // API URL
 const API = ` https://api.coingecko.com/api/v3/coins/markets?vs_currency=USD&order=market_cap_desc&per_page=100&page=1&sparkline=false`;
-
+    
 fetch(API)
 .then(function(response){
     return response.json();
