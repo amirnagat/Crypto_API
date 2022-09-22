@@ -11,7 +11,7 @@ fetch(API)
 })
 .then(function(data){
  displayCoins(data);
-  
+    
        input.addEventListener('keyup',function(){
        let inputValue = input.value;
        let filterCurrency = data.filter(function(data){
@@ -23,7 +23,7 @@ fetch(API)
 // display coins
 function displayCoins (coins) {
     let currencys = document.querySelector('#curnnceys');
-    let list="";
+    let list=""; 
     for (let i = 0; i < coins.length; i++) {
         list += `<div class="container border border-3 mb-2 border-dark  d-flex justify-content-evenly align-items-end ">
         <img class="col-2" src="${coins[i].image}" alt="" style="width:40px">
@@ -36,4 +36,4 @@ function displayCoins (coins) {
     </div>` 
     }
     currencys.innerHTML = list;
-}
+}   
