@@ -18,8 +18,8 @@ fetch(API)
            return data.name.toLowerCase().includes(inputValue);
        })
        displayCoins(filterCurrency);
-   })
-})
+   }) 
+}) 
 // display coins
 function displayCoins (coins) {
     let currencys = document.querySelector('#curnnceys');
@@ -33,7 +33,7 @@ function displayCoins (coins) {
         <p class="col-2 text-black" >${coins[i].total_volume}</p>
         <p class="col-1 text-black" >${coins[i].price_change_percentage_24h}</p>
         <p class="col-1 text-black" >${coins[i].market_cap}</p>
-    </div>` 
+    </div>`  
     }
     currencys.innerHTML = list;
-}   
+}    
