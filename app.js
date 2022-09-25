@@ -17,7 +17,7 @@ fetch(API)
        let filterCurrency = data.filter(function(data){
            return data.name.toLowerCase().includes(inputValue);
        })
-       displayCoins(filterCurrency);
+       displayCoins(filterCurrency);   
    }) 
 })
 // display coins
